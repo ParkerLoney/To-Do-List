@@ -25,7 +25,9 @@ def mark_complete(completeLocation, tasks):
 if __name__ == "__main__":
     add_task("Finish Cyber 201 assignment")
     add_task("Push code to GitHub")
-    view_tasks()
-    mark_complete(0)
-    view_tasks()
-    save_tasks()
+    add_task("Say hello to silas")
+    delete_task(1, tasks)
+    view_tasks(tasks)
+    completeLocation = input("Which task did you complete? (index): ")
+    mark_complete(0, tasks)
+    view_tasks(tasks)
