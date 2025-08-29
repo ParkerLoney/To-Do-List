@@ -16,7 +16,8 @@ def delete_task(location, tasks):
     tasks.pop(location)
 
 # Step 5: Mark task complete
-
+def mark_complete(completeLocation, tasks):
+    tasks[completeLocation] += "✅"
 
 # Step 6: Save/load tasks (extra stretch for today)
 
